@@ -4,10 +4,10 @@ import math
 import torch.utils.model_zoo as model_zoo
 from torchvision.ops import nms
 
-from retinanet.utils import BasicBlock, Bottleneck, BBoxTransform, ClipBoxes
-from retinanet.anchors import Anchors
-from retinanet import losses
-from retinanet.losses import build_target,dice_loss
+from network.utils import BasicBlock, Bottleneck, BBoxTransform, ClipBoxes
+from network.anchors import Anchors
+from network import losses
+from network.losses import build_target,dice_loss
 import torch.nn.functional as F
 
 
