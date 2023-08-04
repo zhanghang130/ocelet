@@ -9,13 +9,11 @@ import torch.optim as optim
 from torchvision import transforms
 import traceback
 
-from retinanet import model_tissue
-from retinanet.dataloader import MyDataset, CocoDataset, CSVDataset, collater_tissue, Resizer, AspectRatioBasedSampler, \
+from network import model_tissue
+from network.dataloader import MyDataset, CocoDataset, CSVDataset, collater_tissue, Resizer, AspectRatioBasedSampler, \
     Augmenter, Normalizer
 from torch.utils.data import DataLoader
 
-from retinanet import coco_eval
-from retinanet import csv_eval
 
 assert torch.__version__.split('.')[0] == '1'
 
